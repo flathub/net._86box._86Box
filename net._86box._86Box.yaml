@@ -52,15 +52,18 @@ modules:
 
   - name: 86box
     buildsystem: cmake-ninja
+    build-options:
+      arch:
+        aarch64:
+          config-opts:
+            - -DNEW_DYNAREC=ON
     sources:
       - type: git
         url: https://github.com/86Box/86Box.git
-        tag: v3.6
-        commit: ad8ea20e14c9b5d0e2c54d1d44f59a5f33572cb0
+        tag: v3.7.1
+        commit: 730af4dd536b2d043c7aa13405bc4dc332adbced
         x-checker-data:
           type: git
-      - type: patch
-        path: metainfo.patch
       - type: script
         dest-filename: 86Box.sh
         commands:
