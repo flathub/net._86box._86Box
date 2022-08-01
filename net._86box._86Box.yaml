@@ -1,6 +1,6 @@
 app-id: net._86box._86Box
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: 86Box.sh
 finish-args:
@@ -55,12 +55,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/86Box/86Box.git
-        tag: v3.6
-        commit: ad8ea20e14c9b5d0e2c54d1d44f59a5f33572cb0
+        tag: v3.7
+        commit: 93404cf291309fa47d0ed6dbccb2d8d84afd5a90
         x-checker-data:
           type: git
-      - type: patch
-        path: metainfo.patch
       - type: script
         dest-filename: 86Box.sh
         commands:
