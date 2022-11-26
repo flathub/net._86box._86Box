@@ -60,8 +60,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/86Box/86Box.git
-        tag: v3.7.1
-        commit: 730af4dd536b2d043c7aa13405bc4dc332adbced
+        tag: v3.11
+        commit: ab086750ec64a1e214d3cf2e603e13ea92fce6f9
         x-checker-data:
           type: git
       - type: script
