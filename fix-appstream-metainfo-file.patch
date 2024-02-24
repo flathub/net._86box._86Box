@@ -1,0 +1,28 @@
+From 52ffbe582fe5a252bc07d02996c21366a3c95423 Mon Sep 17 00:00:00 2001
+From: AsciiWolf <mail@asciiwolf.com>
+Date: Sat, 24 Feb 2024 14:08:26 +0100
+Subject: [PATCH] Fix AppStream metainfo file
+
+---
+ src/unix/assets/net.86box.86Box.metainfo.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/unix/assets/net.86box.86Box.metainfo.xml b/src/unix/assets/net.86box.86Box.metainfo.xml
+index 7602ffb11..1f15f39a5 100644
+--- a/src/unix/assets/net.86box.86Box.metainfo.xml
++++ b/src/unix/assets/net.86box.86Box.metainfo.xml
+@@ -4,9 +4,10 @@
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_license>GPL-2.0-or-later</project_license>
+     <name>86Box</name>
++    <developer_name>86Box developers</developer_name>
+     <summary>An emulator for classic IBM PC clones</summary>
+     <categories>
+-      <category>Emulation</category>
++      <category>Emulator</category>
+     </categories>
+     <launchable type="desktop-id">net.86box.86Box.desktop</launchable>
+     <releases>
+-- 
+2.43.2
+
