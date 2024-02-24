@@ -71,6 +71,8 @@ modules:
         commit: 8cf8ccf3b3463306ea1edb4d489f5057d5c89c7a
         x-checker-data:
           type: git
+      - type: patch
+        path: fix-appstream-metainfo-file.patch
       - type: script
         dest-filename: 86Box.sh
         commands:
