@@ -67,12 +67,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/86Box/86Box.git
-        tag: v4.1
-        commit: 8cf8ccf3b3463306ea1edb4d489f5057d5c89c7a
+        tag: v4.1.1
+        commit: d54e5714ae8c40405cd95c23fbb3eda7b503ff23
         x-checker-data:
           type: git
-      - type: patch
-        path: fix-appstream-metainfo-file.patch
       - type: script
         dest-filename: 86Box.sh
         commands:
