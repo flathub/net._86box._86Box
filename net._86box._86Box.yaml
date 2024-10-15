@@ -23,7 +23,7 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: http://http.debian.net/debian/pool/main/f/fluid-soundfont/fluid-soundfont_3.1.orig.tar.gz
+        url: https://ftp.debian.org/debian/pool/main/f/fluid-soundfont/fluid-soundfont_3.1.orig.tar.gz
         sha256: 2621acaa1c78e4abdb24bdd163230cc577e61276936d6aa6e3180582142f0343
     build-commands:
       - install -Dm644 FluidR3_GM.sf2 ${FLATPAK_DEST}/share/soundfonts/FluidR3_GM.sf2
@@ -32,30 +32,28 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/FNA-XNA/FAudio/archive/refs/tags/22.07.tar.gz
-        sha256: 591c8bf63873856d051d4ba8ff4a43e853391465d4eacd164c1d10898d848d04
+        url: https://github.com/FNA-XNA/FAudio/archive/refs/tags/24.11.tar.gz
+        sha256: 7aa5fdc762e1abbf4721e793de589eced46eef872ee2b9a03ab79ac81b64082c
 
   - name: rtmidi
     buildsystem: cmake-ninja
-    config-opts:
-      - -DRTMIDI_API_JACK=OFF
     sources:
       - type: archive
-        url: https://github.com/thestk/rtmidi/archive/refs/tags/5.0.0.tar.gz
-        sha256: c7923e4eee82b06c007435892cb2c3212d9007fa482c6b718943bda71c02c5a7
+        url: https://github.com/thestk/rtmidi/archive/refs/tags/6.0.0.tar.gz
+        sha256: ef7bcda27fee6936b651c29ebe9544c74959d0b1583b716ce80a1c6fea7617f0
 
   - name: libevdev
     sources:
       - type: archive
-        url: https://www.freedesktop.org/software/libevdev/libevdev-1.12.0.tar.xz
-        sha256: 2f729e3480695791f9482e8388bd723402b89f0eaf118057bbdea3cecee9b237
+        url: https://www.freedesktop.org/software/libevdev/libevdev-1.13.3.tar.xz
+        sha256: abf1aace86208eebdd5d3550ffded4c8d73bb405b796d51c389c9d0604cbcfbf
 
   - name: libslirp
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.gz
-        sha256: 9398f0ec5a581d4e1cd6856b88ae83927e458d643788c3391a39e61b75db3d3b
+        url: https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.8.0/libslirp-v4.8.0.tar.gz
+        sha256: 2a98852e65666db313481943e7a1997abff0183bd9bea80caec1b5da89fda28c
 
   - name: 86box
     buildsystem: cmake-ninja
