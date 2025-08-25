@@ -76,7 +76,7 @@ modules:
         commands:
           - mkdir -p ${XDG_DATA_HOME}/86Box/roms
           - mkdir -p ${XDG_CONFIG_HOME}/86Box
-          - exec 86Box --vmpath ${XDG_CONFIG_HOME}/86Box "$@"
+          - exec 86Box "$@"
     post-install:
       - mkdir -p ${FLATPAK_DEST}/share/86Box/roms
       - install -Dm755 86Box.sh ${FLATPAK_DEST}/bin/86Box.sh
