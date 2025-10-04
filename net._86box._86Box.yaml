@@ -1,6 +1,6 @@
 app-id: net._86box._86Box
 runtime: org.kde.Platform
-runtime-version: 6.8
+runtime-version: 6.9
 sdk: org.kde.Sdk
 command: 86Box.sh
 finish-args:
