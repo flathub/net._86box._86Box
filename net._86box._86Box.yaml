@@ -1,6 +1,6 @@
 app-id: net._86box._86Box
 runtime: org.kde.Platform
-runtime-version: 6.9
+runtime-version: 6.10
 sdk: org.kde.Sdk
 command: 86Box.sh
 finish-args:
@@ -30,6 +30,8 @@ modules:
 
   - name: faudio
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: archive
         url: https://github.com/FNA-XNA/FAudio/archive/refs/tags/24.11.tar.gz
