@@ -69,8 +69,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/86Box/86Box.git
-        tag: v5.3
-        commit: 69a7db1af627fd4b36ee08579429bfd08fdb8c1e
+        tag: v6.0
+        commit: 4fef696a4eead1d55a28d6ac0e5bd2864e5454da
         x-checker-data:
           type: git
       - type: script
@@ -90,4 +90,3 @@ modules:
       - install -Dm644 src/unix/assets/64x64/net.86box.86Box.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/net._86box._86Box.png
       - install -Dm644 src/unix/assets/128x128/net.86box.86Box.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/net._86box._86Box.png
       - install -Dm644 src/unix/assets/256x256/net.86box.86Box.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/net._86box._86Box.png
-      - install -Dm644 src/unix/assets/512x512/net.86box.86Box.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/net._86box._86Box.png
